@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--meta name="generator" -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://t2arc.net/main.css">
+		<title>t2arc.net &gt; Picoアケコン製作記</title>
+	</head>
+	<body>
+		<header>
+			<div class="breadcrumb"><a href="/">t2arc.net</a>/<a href="https:&#x2F;&#x2F;t2arc.net&#x2F;entry&#x2F;">記事一覧</a>/</div>
+			<h1>Picoアケコン製作記</h1>
+			<summary>raspberry pi picoでアケコンを作ります.</summary>
+		</header>
+		<main>
+<h2 id="概要">概要</h2>
+<p>Raspberry Pi Picoを制御用基板とするアーケードコントローラーを製作した.</p>
+<h2 id="ユースケース">ユースケース</h2>
+<ul>
+<li>Nintendo Switchでアーケード移植を遊ぶ.</li>
+<li>ゲーミングPCでゲームを遊ぶ.</li>
+<li>眺める.</li>
+</ul>
+<h2 id="設計">設計</h2>
+<p>直販で購入でき、またSTGやパズルゲームの筐体での導入実績があることからセイミツのボタン/スティックを購入.</p>
+<p><img src="https://t2arc.net/entry/stick_log/./parts.jpg" alt="購入したパーツ" /></p>
+<p>カラーはSEGAをイメージし30mmボタンとレバーボールを緑、24mmボタンを黄とした.</p>
+<p>基板は、オープンソースの既存のファームウェアによりPC/Switchで動作すること,入手性がいいことからRaspberry Pi Picoを採用した.</p>
+<p>端子台はAmazonで購入.(Treedix ブレークアウトボード)</p>
+<p><img src="https://t2arc.net/entry/stick_log/./pico-with-terminal.jpg" alt="ブレークアウトボード" /></p>
+<p>基板とレバー・ボタンとの接続ハーネスは、メンテナンス性を考慮しファストン端子で接続している.</p>
+<p>ケースは当初RAPのガワを使用することを想定していたが、ヤフオクで総金属製のケースを見つけたことからこれを利用した.</p>
+<p><img src="https://t2arc.net/entry/stick_log/./case.jpg" alt="ケース" /></p>
+<p>PCとの接続に使用するUSBmicroBケーブルは取外しできるものを見つけたのでこれを利用.</p>
+<p>また現在は装飾だが今後切り替えに使うためにセレクタスイッチを付けた.</p>
+<p><img src="https://t2arc.net/entry/stick_log/./option-sw.jpg" alt="スイッチ" /></p>
+<h2 id="製作">製作</h2>
+<h3 id="組立">組立</h3>
+<p>そこまで苦労せず...</p>
+<h2 id="結果">結果</h2>
+<p><img src="https://t2arc.net/entry/stick_log/./stick.jpg" alt="完成品の画像" /></p>
+<h2 id="感想">感想</h2>
+<p>操作感などハードウエア面では満足いく仕上がりになった.</p>
+<p>現在はFWが既存のものなためLED制御など不要な機能が多く,また設定の変更が不便なため,今後は自作のFWに切り替えたい.</p>
+
+		</main>
+		<footer>
+			<p>注があるものを除いて, このサイトの内容物は<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 ライセンス</a>の下に提供されています。</p>
+			<address>ozoramore</address>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+! Title:HHfilter
+! 2024-01-28 23:46
+
+!------------futaba-------------!
+||2chan.net/bin/*.htm
+||free2.jp^$domain=2chan.net
+2chan.net###rightad
+! 2chan.net##div
+2chan.net##script
+2chan.net##iframe
+2chan.net##div[style*="margin:2px"]
+2chan.net##div[style*="margin:4px"]
+2chan.net##.tue
+2chan.net##.tue2
+||2chan.net/bin/count.swf
+||2chan.net/bin/uuacount.php?*
+||2chan.net/bin/uucount.php
+
+!------------snrec--------------!
+||*.piano.io^$domain=snrec.jp
+

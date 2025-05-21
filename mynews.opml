@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+	<head>
+		<title>feeds</title>
+		<dateModified>金 4 25 15:10:02 2025</dateModified>
+	</head>
+	<body>
+		<outline text="All">
+			<outline text="NHKニュース" type="rss" htmlUrl="http://www3.nhk.or.jp/news/" xmlUrl="https://www.nhk.or.jp/rss/news/cat0.xml"/>
+			<outline text="JSTサイエンスポータル" type="rss" htmlUrl="https://scienceportal.jst.go.jp" xmlUrl="https://scienceportal.jst.go.jp/feed/rss.xml"/>
+			<outline text="窓の杜" type="rss" htmlUrl="https://forest.watch.impress.co.jp" xmlUrl="https://forest.watch.impress.co.jp/data/rss/1.0/wf/feed.rdf"/>
+			<outline text="INTERNET Watch" type="rss" htmlUrl="https://internet.watch.impress.co.jp" xmlUrl="https://internet.watch.impress.co.jp/data/rss/1.0/iw/feed.rdf"/>
+			<outline text="エルミタージュ秋葉原" type="rss" htmlUrl="https://www.gdm.or.jp" xmlUrl="https://www.gdm.or.jp/feed"/>
+			<outline text="デジカメ Watch" type="rss" htmlUrl="https://dc.watch.impress.co.jp" xmlUrl="http://dc.watch.impress.co.jp/cda/rss/digicame.rdf"/>
+			<outline text="PHILE WEB 総合" type="rss" htmlUrl="http://www.phileweb.com/" xmlUrl="https://www.phileweb.com/rss.php"/>
+			<outline text="4Gamer.net" type="rss" htmlUrl="https://www.4gamer.net/" xmlUrl="https://www.4gamer.net/rss/news_topics.xml"/>
+			<outline text="Nintendo DREAM WEB" type="rss" htmlUrl="https://www.ndw.jp" xmlUrl="https://www.ndw.jp/feed/"/>
+			<outline text="TOWER RECORDS ONLINE" type="rss" htmlUrl="https://tower.jp/feeds/article" xmlUrl="https://tower.jp/feeds/article/"/>
+			<outline text="webCG" type="rss" htmlUrl="https://www.webcg.net" xmlUrl="https://www.webcg.net/list/feed/rss"/>
+			<outline text="文具のとびら" type="rss" htmlUrl="https://www.buntobi.com/" xmlUrl="https://www.buntobi.com/rss.xml"/>
+			<outline text="gihyo.jp" type="rss" htmlUrl="https://gihyo.jp" xmlUrl="https://gihyo.jp/feed/rss2"/>
+			<outline text="ラジオNIKKEI 競馬実況web" type="rss" htmlUrl="https://www.radionikkei.jp/keiba_article/" xmlUrl="https://www.radionikkei.jp/keiba_article/rss.xml"/>
+			<outline text="サンレコ" type="rss" htmlUrl="https://www.snrec.jp/" xmlUrl="https://www.snrec.jp/rss"/>
+			<outline text="DTMステーション" type="rss" htmlUrl="https://www.dtmstation.com" xmlUrl="https://www.dtmstation.com/feed"/>
+			<outline text="静岡新聞(Yahoo)" type="rss" htmlUrl="https://news.yahoo.co.jp/media/at_s?source=rss" xmlUrl="https://news.yahoo.co.jp/rss/media/at_s/all.xml"/>
+			<outline text="Vivaldi Browser" type="rss" htmlUrl="https://vivaldi.com/ja/" xmlUrl="https://vivaldi.com/ja/feed/"/>
+			<outline text="DailyPortalZ" type="rss" htmlUrl="https://dailyportalz.jp" xmlUrl="https://dailyportalz.jp/feed/headline"/>
+			<outline text="Planet Arch Linux" type="rss" htmlUrl="https://archlinux.org/planet/" xmlUrl="https://archlinux.org/feeds/planet/"/>
+			<outline text="NEXCO中日本" type="rss" htmlUrl="https://www.c-nexco.co.jp/corporate/pressroom/news_release/" xmlUrl="https://www.c-nexco.co.jp/rss/news/management_news.xml"/>
+		</outline>
+	</body>
+</opml>

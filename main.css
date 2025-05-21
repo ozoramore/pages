@@ -1,0 +1,140 @@
+header {
+	margin: 0;
+	padding: 0;
+	* {
+		font-style: none;
+		text-decoration: none;
+		color: black;
+	}
+	.breadcrumb {
+		margin-bottom: 0.2rem;
+	}
+
+	h1 {
+		margin: 0;
+		border-bottom: 0.1rem black solid;
+		::before {
+			content: "■";
+		}
+	}
+	summary {
+		border-top: 0;
+		margin-top: 0;
+		text-align: right;
+	}
+	padding-bottom: 2vh;
+}
+
+figure {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	margin-right: 1rem;
+}
+
+figcaption {
+	caption-side: bottom;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1rem;
+}
+
+img, svg {
+	margin: 0;
+	width: min(30rem, 20vw, 90%);
+	height: auto;
+	border: 0.1rem black solid;
+}
+
+h2, h3, h4, h5, h6 {
+	clear: both;
+	list-style: none;
+	font-size: 100%;
+	margin: 0;
+}
+
+h2 {
+	font-size: 120%;
+}
+
+h3 {
+	font-size: 110%;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+b {
+	font-size: 110%;
+}
+
+li, dd, td, table, .custom_emoji {
+	>p{
+		display: inline;
+	}
+	img{
+		width: min(5rem, 50%);
+		border: none;
+	}
+}
+
+li {
+	list-style-type: square;
+	>ul, >ol {
+		padding-left: 2rem;
+	}
+}
+
+dl {
+	padding: 0;
+	margin-left: 1rem
+	dl {
+		margin: 0;
+	}
+}
+
+dt {
+	margin-left: 0;
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 1rem;
+	>p {
+		display: inline;
+	}
+}
+
+table, th, td {
+	padding: 0;
+	border: 0.1rem black solid;
+	border-collapse: collapse;
+	font-size: small;
+}
+
+code {
+	font-size: 110%;
+	background-color: lightgray;
+}
+
+main {
+	padding-bottom: 2vh;
+}
+
+main, footer {
+	border-bottom: 0.1rem black solid;
+}
+
+
+body {
+	margin: 5vw;
+	margin-top: 0;
+	width: min(90vw, 80rem);
+}
+
+.avatar {
+	width: 5rem;
+	height: auto;
+}

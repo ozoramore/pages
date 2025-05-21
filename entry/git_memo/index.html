@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--meta name="generator" -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://t2arc.net/main.css">
+		<title>t2arc.net &gt; gitメモ（個人用）</title>
+	</head>
+	<body>
+		<header>
+			<div class="breadcrumb"><a href="/">t2arc.net</a>/<a href="https:&#x2F;&#x2F;t2arc.net&#x2F;entry&#x2F;">記事一覧</a>/</div>
+			<h1>gitメモ（個人用）</h1>
+			<summary>個人用リファレンスなので正確さは保障しない。</summary>
+		</header>
+		<main>
+<h2 id="git_rebase_--onto_A_B_hoge"><code>git rebase --onto A B hoge</code></h2>
+<p>ブランチhogeの根元をBからAに移す.
+複数人での開発の際、メインブランチから遅れまくるのでわりと使う.</p>
+<p>pushするとき-fを付ける必要があるので注意。</p>
+<h2 id="git_fetch_URL"><code>git fetch URL</code></h2>
+<p>指定したURLにあるフォークレポジトリのブランチを参照できるようにする.
+他人の作業を手元に持ってくるときに使う.</p>
+<h2 id="git_log_--oneline_hoge_|_head_--l=N"><code>git log --oneline hoge | head --l=N</code></h2>
+<p>ブランチhogeのログを先頭からN行表示する
+hogeを指定しなければ現在のブランチのログになる.
+Nを指定しなければ10行表示.</p>
+<p>cherry-pickの際に便利.</p>
+<h2 id="git_log_--oneline_--graph_hoge"><code>git log --oneline --graph hoge</code></h2>
+<p>ブランチhogeのログをグラフで表示する.
+デフォルトで入っているグラフ表示もそれなりに使える.</p>
+<p>これは自環境じゃなくても使えるので覚えておこう.</p>
+<h2 id="tig"><code>tig</code></h2>
+<p>CLIでいい感じに表示できるgitクライアント.
+git標準ではないのでパッケージマネージャー等でtigをインストールする必要がある.</p>
+
+		</main>
+		<footer>
+			<p>注があるものを除いて, このサイトの内容物は<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 ライセンス</a>の下に提供されています。</p>
+			<address>ozoramore</address>
+		</footer>
+	</body>
+</html>

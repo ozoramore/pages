@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--meta name="generator" -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://t2arc.net/main.css">
+		<title>t2arc.net &gt; Lispのメモ(個人用)</title>
+	</head>
+	<body>
+		<header>
+			<div class="breadcrumb"><a href="/">t2arc.net</a>/<a href="https:&#x2F;&#x2F;t2arc.net&#x2F;entry&#x2F;">記事一覧</a>/</div>
+			<h1>Lispのメモ(個人用)</h1>
+			<summary>プログラマの端くれとしてLispを勉強したくなったので…。</summary>
+		</header>
+		<main>
+<h2 id="導入">導入</h2>
+<p>下調べし、勉強するLispの方言として、Schemeを選択した。実装はGaucheを選択。
+自環境はArchLinuxだが、gaucheはextraレポジトリにあるためAURは不要。</p>
+<p>ファイル拡張子は<code>.scm</code>。実行は<code>gosh</code>で行う。
+scmファイルを選択しないときは<code>gosh</code>はシェルとしてふるまう。
+抜けるためには<code>(exit)</code>と入力する。</p>
+<h2 id="基本的文法を学ぶ">基本的文法を学ぶ</h2>
+<p>とりあえず標準入出力がないと実用プログラムは始まらないので, <strong>Hello World!</strong> からやってみる。</p>
+<p>出力命令は<code>(print "Hello World!")</code>.そらそうだ。</p>
+<p>で、文字列を変数に格納したい、となる。</p>
+<p><code>(define x y)</code>,で<code>y</code>を<code>x</code>に入れることができる。</p>
+<p>面白いのは、<code>y</code>の中身は処理でもいい、ということ。</p>
+<pre data-lang="scheme" class="language-scheme "><code class="language-scheme" data-lang="scheme">(define (hoge x)(* x 2))
+</code></pre>
+<p>とすれば、関数を自作できる。</p>
+
+		</main>
+		<footer>
+			<p>注があるものを除いて, このサイトの内容物は<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 ライセンス</a>の下に提供されています。</p>
+			<address>ozoramore</address>
+		</footer>
+	</body>
+</html>

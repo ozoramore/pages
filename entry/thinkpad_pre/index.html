@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--meta name="generator" -->
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="https://t2arc.net/main.css">
+		<title>t2arc.net &gt; thinkpad購入記</title>
+	</head>
+	<body>
+		<header>
+			<div class="breadcrumb"><a href="/">t2arc.net</a>/<a href="https:&#x2F;&#x2F;t2arc.net&#x2F;entry&#x2F;">記事一覧</a>/</div>
+			<h1>thinkpad購入記</h1>
+			<summary>Thinkpad E14 gen6 (AMD) を買ったけど届いてないので雑記</summary>
+		</header>
+		<main>
+<h2 id="前書き">前書き</h2>
+<p>現在使っているラップトップ機は大学に入学したときに買った富士通 UHで、7年ほど使い続けている。</p>
+<p>これだけの期間使い続けると、さすがにバッテリーが保たないなどの不調が出てくるため、Lenovo公式の直販サイトでThinkPadを購入した。</p>
+<p>まだ届いていないが今後に備えてセットアップ手順など諸々記載しておく。</p>
+<h2 id="構成">構成</h2>
+<ul>
+<li>ベースモデル
+<ul>
+<li>ThinkPad E14 Gen 6 AMD
+<ul>
+<li>大学時代は軽さ優先だったが,就職した今PCを持ち運ぶことはないと考えて安いモデルを選択した。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>プロセッサー
+<ul>
+<li>AMD Ryzen™ 7 7735U
+<ul>
+<li>Ryzen5と7にさほど価格差がなかったので7、ただ消費電力は少ないほうが良かったのでUを選択。
++:% 初期導入OS</li>
+</ul>
+</li>
+<li>Windows 11 Home 64bit, 日本語版, Officeなし
+<ul>
+<li>どの道Linuxに載せ替えするのでいちばん安いものを選んだ</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>RAM
+<ul>
+<li>8 GB DDR5-4800MHz (SODIMM)
+<ul>
+<li>自分でRAM買って盛りたかったため少なめに…ただあまり差額はなかった。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ROM
+<ul>
+<li>256 GB SSD M.2 2242 PCIe-NVMe Gen4 TLC OPAL対応
+<ul>
+<li>1TBにあとで載せ替えする…ただこれも同上</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ディスプレイ
+<ul>
+<li>14" 2.2K液晶 (2240 x 1400)
+<ul>
+<li>解像度は高いに越したことはないので選択。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>内蔵カメラ
+<ul>
+<li>IR&amp;1080p FHDカメラ、マイク
+<ul>
+<li>多分使うことはないが…。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>無線LANアダプター
+<ul>
+<li>Wi-Fi 6E/BlueTooth対応 (RealTek RTL8852CE)
+<ul>
+<li>6Eと6の差ってなんなの？とりあえず上位に。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>指紋センサー
+<ul>
+<li>あり
+<ul>
+<li>あって困ることはないだろう…たぶん</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>キーボード
+<ul>
+<li>バックライト付、ブラック - 英語
+<ul>
+<li>USキーボードがThinkPadを選択したいちばんの理由だった。これまでずっと富士通でした</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>バッテリー
+<ul>
+<li>57 Wh
+<ul>
+<li>多ければ多いほどよいとされる。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>計: ¥105,644-</p>
+<h2 id="セットアップ手順">セットアップ手順</h2>
+<h3 id="HWのセットアップ">HWのセットアップ</h3>
+<p>内部構造、分解方法は<a href="https://for-real.jp/customize-lenovo-thinkpad-e14-gen-6/">for-real.jp</a>が詳しい。</p>
+<h4 id="用意するもの">用意するもの</h4>
+<ul>
+<li>ドライバー</li>
+<li>ギターピック数個</li>
+<li>ねじを置く皿</li>
+<li>SSD/RAM</li>
+<li>外したSSD・RAM保管用の袋</li>
+</ul>
+<h4 id="手順">手順</h4>
+<ol>
+<li>開ける</li>
+<li>挿入されているSSD(2242),RAMを外す</li>
+<li>M.2 2280の設置可能なスロットに、用意したM.2 SSDを接続する。</li>
+<li>RAMのスロットに、用意したRAM(SODIMM DDR5 16GBx2)を挿入する。</li>
+<li>閉じる</li>
+</ol>
+<h3 id="ソフトウェアのセットアップ">ソフトウェアのセットアップ</h3>
+<ul>
+<li><a href="https://wiki.archlinux.jp/index.php/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%82%AC%E3%82%A4%E3%83%89">ArchWiki(JP) インストールガイド</a></li>
+<li><a href="https://wiki.archlinux.org/title/Installation_guide">ArchWiki(EN) Installation guide</a></li>
+<li><a href="https://gist.github.com/geosharma/afe1ea9ebe58cb67aaaba62a0d47bc7a">geosharma/aurutils_inst_conf.md</a></li>
+<li><a href="https://note.kurodigi.com/void-labwc/">Void LinuxにLabwcで軽量で実用性の高いWaylandデスクトップ環境を構築する</a></li>
+<li><a href="../arch_package">俺がArchLinuxで使ってるパッケージ</a></li>
+</ul>
+<p>この辺を見て頑張る。</p>
+<p>たぶん買ったあとでセットアップ手順のメモを書く...</p>
+
+		</main>
+		<footer>
+			<p>注があるものを除いて, このサイトの内容物は<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 ライセンス</a>の下に提供されています。</p>
+			<address>ozoramore</address>
+		</footer>
+	</body>
+</html>
