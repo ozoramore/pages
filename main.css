@@ -13,9 +13,6 @@ header {
 	h1 {
 		margin: 0;
 		border-bottom: 0.1rem black solid;
-		::before {
-			content: "■";
-		}
 	}
 	.description {
 		border-top: 0;
@@ -50,20 +47,28 @@ h2, h3, h4, h5, h6 {
 	clear: both;
 	list-style: none;
 	font-size: 100%;
-	margin: 0;
+	margin: 0.5rem;
+	margin-left: 0;
 }
 
 h2 {
 	font-size: 120%;
 }
+h2::before {
+	content: "■";
+}
 
-h3 {
-	font-size: 110%;
+h3::before {
+	content: "□";
 }
 
 p {
 	margin: 0;
 	padding: 0;
+}
+main a {
+	text-decoration: none;
+	border-bottom: 0.1rem solid;
 }
 
 b {
@@ -80,11 +85,17 @@ li, dd, td, table, .custom_emoji {
 	}
 }
 
+ol, ul {
+	margin: 0.5rem;
+}
+
 li {
 	list-style-type: square;
 	>ul, >ol {
-		padding-left: 2rem;
+		margin-left: 0;
+		padding-left: 0.5rem;
 	}
+	padding: 0.1rem;
 }
 
 dl {
