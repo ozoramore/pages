@@ -17,10 +17,23 @@ header {
 	.description {
 		border-top: 0;
 		margin-top: 0;
+		margin-bottom: auto;
 		text-align: right;
 	}
 	padding-bottom: 2vh;
 }
+
+.lastupdate {
+	margin: 1vh;
+	text-align: right;
+	font-size: small;
+	font-style: italic;
+}
+
+.lastupdate::before {
+		font-style: normal;
+		content: "lastupdate:";
+	}
 
 figure {
 	display: inline-block;
@@ -134,7 +147,13 @@ main {
 	padding-bottom: 2vh;
 }
 
-main, footer {
+address {
+	padding-bottom: 1vh;
+}
+
+main, footer, hr {
+	margin-top: 0.5vh;
+	border: none;
 	border-bottom: 0.1rem black solid;
 }
 

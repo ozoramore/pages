@@ -5,33 +5,37 @@
     </url>
     <url>
         <loc>https://t2arc.net/custom_emoji/</loc>
-        <lastmod>2025-05-15</lastmod>
+        <lastmod>2025-05-21T11:03:00+09:00</lastmod>
     </url>
     <url>
         <loc>https://t2arc.net/entry/</loc>
     </url>
     <url>
         <loc>https://t2arc.net/entry/arch_package/</loc>
-        <lastmod>2025-01-07</lastmod>
+        <lastmod>2025-01-07T00:00:00+09:00</lastmod>
     </url>
     <url>
         <loc>https://t2arc.net/entry/git_memo/</loc>
-        <lastmod>2023-03-24</lastmod>
+        <lastmod>2023-03-24T00:00:00+09:00</lastmod>
     </url>
     <url>
         <loc>https://t2arc.net/entry/lispmemo/</loc>
-        <lastmod>2025-01-05</lastmod>
+        <lastmod>2025-01-05T00:00:00+09:00</lastmod>
     </url>
     <url>
         <loc>https://t2arc.net/entry/stick_log/</loc>
-        <lastmod>2022-11-22</lastmod>
+        <lastmod>2022-11-22T00:00:00+09:00</lastmod>
     </url>
     <url>
         <loc>https://t2arc.net/entry/thinkpad_pre/</loc>
-        <lastmod>2025-01-07</lastmod>
+        <lastmod>2025-01-07T00:00:00+09:00</lastmod>
+    </url>
+    <url>
+        <loc>https://t2arc.net/entry/vim_memo/</loc>
+        <lastmod>2025-05-28T17:06:26+09:00</lastmod>
     </url>
     <url>
         <loc>https://t2arc.net/entry/zola_ssg/</loc>
-        <lastmod>2025-05-13</lastmod>
+        <lastmod>2025-05-13T00:00:00+09:00</lastmod>
     </url>
 </urlset>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="zola">
+<link rel="stylesheet" href="https://t2arc.net/main.css">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<title>t2arc.net &gt; vimメモ(個人用)</title>
+</head>
+<body>
+<header>
+<div class="breadcrumb"><a href="/">t2arc.net</a>/<a href="https:&#x2F;&#x2F;t2arc.net&#x2F;entry&#x2F;">記事一覧</a>/</div>
+<h1>vimメモ(個人用)</h1>
+<p class="description">最近のメインは専らneovimだが、このページではvim全般に使える小技について書く。</p>
+</header>
+<main><p>あまり覚えていないけど使いこなせると便利であろう小技についてメモる。</p>
+<p>このテクが書いてない！と思った場合、それは筆者が完全にマスターしている、もしくはまったく存在を知らないのどちらかです。だいたい後者。</p>
+<h2 id="commandモード">commandモード</h2>
+<h3 id="バッファを上書き:_%">バッファを上書き: <code>%</code></h3>
+<p>使用例::<br />
+htmlを編集していて、バッファをフォーマッタにかけたいとき</p>
+<pre><code>:%!tidy 2&gt;&#x2F;dev&#x2F;null
+</code></pre>
+<h3 id="現在のカーソル位置に挿入する:_r">現在のカーソル位置に挿入する: <code>r</code></h3>
+<p>使用例::<br />
+zolaのヘッダ欄に日付を挿入するときに</p>
+<pre><code>:r!date --iso-8601=seconds
+</code></pre>
+</main>
+<footer>
+<p>注があるものを除いて, このサイトの内容物は
+<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0ライセンス</a>
+の下に提供されています。</p>
+<p class="lastupdate">2025-05-28T17:06:26+0900</p>
+</footer>
+</body>
+</html>
