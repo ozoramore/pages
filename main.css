@@ -31,9 +31,9 @@ header {
 }
 
 .lastupdate::before {
-		font-style: normal;
-		content: "lastupdate:";
-	}
+	font-style: normal;
+	content: "lastupdate:";
+}
 
 figure {
 	display: inline-block;
