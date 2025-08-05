@@ -4,18 +4,21 @@
 		<meta name="viewport" content="width=device-width">
 		<meta http-equiv= "content-type" charset= "utf-8">
 		<title>壁打ちbot</title>
-		<link href="style.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet"/>
 		<script src="script/script.js" defer></script>
 	</head>
 	<body>
 		<div id= "chatbot">
-			<div id= "chatbot-header"> <div id= "chatbot-logo">Chat</div> </div>
+			<div id= "chatbot-header">
+				<div id= "chatbot-logo">Chat</div>
+				<input type="submit" value="Save" class="action-button" id="chatbot-save"/>
+			</div>
 			<div id= "chatbot-body"> <ul id= "chatbot-ul"></ul> </div>
 			<!--入力場所，送信ボタン-->
 			<form onsubmit= "return false">
 				<div id= "chatbot-footer">
-					<input type= "text" id= "chatbot-text" class= "browser-default" placeholder= "テキストを入力">
-					<input type= "submit" value= "Send" id= "chatbot-submit">
+					<input type= "text" id= "chatbot-text" class= "browser-default" placeholder= "テキストを入力"/>
+					<input type= "submit" value= "Send" class="action-button" id="chatbot-submit"/>
 				</div>
 			</form>
 		</div>

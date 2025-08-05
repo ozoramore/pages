@@ -22,32 +22,14 @@ body {
 挿入する。吹き出しの三角形は疑似要素を使用する。 */
 /*チャットボット本体*/
 #chatbot {
+	height: 100dvh;
+	width: 100dvw;
 	position: fixed;
 	overflow: hidden;
 	opacity: 1;
-	transition: .4s;
 	background: #FFF;
 }
-@media screen and (min-width: 700px) { /*PC*/
-	#chatbot {
-		height: 90vh;
-		width: 50vw;
-		bottom: 0;
-		right: 0;
-		margin: 0;
-		box-shadow: 0px 0 25px -5px #888;
-		border-radius: 10px;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-}
-@media screen and (max-width: 700px) { /*スマホ*/
-	#chatbot {
-		height: 100vh;
-		width: 100vw;
-	}
-}
+
 #chatbot-header {
 	height: 60px;
 	background: #335C80;
@@ -59,13 +41,13 @@ body {
 	color: #FFF;
 	line-height: 60px;
 	padding: 0 30px;
-	font-size: 16px;
+	font-size: large;
 }
 
 /*チャットのフィールド*/
 #chatbot-body {
-	width: 100%;
-	height: calc(100% - 110px);
+	width: 100dvw;
+	height: calc(100dvh - 110px);
 	padding-top: 10px;
 	background: #FFF;
 	box-sizing: border-box;
@@ -74,13 +56,9 @@ body {
 	/*縦向きのスクロール許可*/
 	overflow-y: scroll;
 }
-@media screen and (max-width: 700px) { /*スマホ*/
-	#chatbot-body {
-		height: calc(100vh - 170px);
-	}
-}
+
 #chatbot-footer {
-	width: 100%;
+	width: 100dvw;
 	height: 50px;
 	display: flex;
 	box-sizing: border-box;
@@ -90,9 +68,9 @@ body {
 /*入力する場所*/
 #chatbot-text {
 	height: 40px;
-	width: 72%;
+	width: 72dvw;
 	display: block;
-	font-size: 16px;
+	font-size: normal;
 	box-sizing: border-box;
 	padding-left: 10px;
 	margin: auto 10px auto 15px;
@@ -105,13 +83,13 @@ body {
 	outline: none;
 }
 /*送信ボタン*/
-#chatbot-submit{
+.action-button{
 	cursor: pointer;
 	height: 35px;
 	padding: 0 20px;
 	margin: auto;
 	margin-right: 15px;
-	font-size: 16px;
+	font-size: large;
 	background: #335C80;
 	color: white;
 	display: block;
@@ -120,7 +98,7 @@ body {
 	box-sizing: border-box;
 	border-radius: 7px;
 }
-#chatbot-submit:active{
+.action-button:active{
 	outline: 0;
 	background: #86ABBF;
 }
@@ -137,19 +115,25 @@ body {
 	padding-bottom: 10px;
 	word-wrap: break-word;
 }
-#chatbot-ul > li > div {
+#chatbot-ul > li > div.chatbot-left,
+#chatbot-ul > li > div.chatbot-right{
 	display: inline-block;
 	box-sizing: border-box;
 	min-height: 23px;
 	max-width: 70%;
 	padding: 7px 13px;
-	font-size: 16px;
+	font-size: normal;
 	line-height: 1.3em;
 	position: relative;
 }
 
 #chatbot-ul > li > div.chatbot-short {
 	width: 53%;
+}
+.chatbot-time{
+	display: block;
+	font-size:small;
+	color: lightgray;
 }
 /*相手の吹き出しのデザイン*/
 .chatbot-left{
@@ -177,168 +161,4 @@ body {
 }
 .right{
 	text-align: right;
-}
-.choice-title {
-	position: absolute;
-	width: 100%;
-	height: 25px;
-	line-height: 25px;
-	border-radius: 9px 9px 0 0;
-	text-align: center;
-	font-size: 15px;
-	top: 0;
-	left: 0;
-	background: #456F99;
-	color: #FFF;
-	letter-spacing: .05em;
-}
-.choice-q {
-	/*     width: 180px; */
-	margin: 25px 0 .7rem;
-	font-size: 15px;
-	line-height: 1.3em;
-	letter-spacing: .05em;
-}
-.choice-button {
-	cursor: pointer;
-	user-select: none;
-	background: #456F99;
-	color: #FFF;
-	border-radius: 3px;
-	/* margin-top: 8px; */
-	margin-bottom: 8px;
-	text-align: left;
-	padding: 7px 13px;
-	font-size: 16px;
-	line-height: 1.3em;
-	letter-spacing: .05em;
-	border: none;
-	display: block;
-	width: 100%;
-}
-.choice-button:active {
-	background: #B8D1E6;
-}
-.choice-button-disabled {
-	background: #B8D1E6;
-}
-
-
-
-@media screen and (max-width: 700px) { /*スマホ*/
-	#chatbot-start-button {
-		margin: 30px 40px;
-	}
-	#chatbot-logo {
-		font-size: 17px;
-	}
-	/*入力する場所*/
-	#chatbot-text {
-		height: 45px;
-		font-size: 17px;
-	}
-	/*送信ボタン*/
-	#chatbot-submit {
-		height: 40px;
-		font-size: 16px;
-	}
-	#chatbot-ul > li > div {
-		min-height: 30px;
-		padding: 10px 16px;
-		font-size: 17px;
-	}
-	.choice-title {
-		height: 30px;
-		line-height: 30px;
-		font-size: 17px;
-	}
-	.choice-q {
-		margin: 30px 0 1rem;
-		font-size: 17px;
-	}
-	.choice-button {
-		margin-bottom: 10px;
-		padding: 10px 16px;
-		font-size: 16.5px;
-	}
-}
-/*---------- チャットボットここまで  ----------*/
-
-
-
-/*---------- ロボット考え中アニメーション ----------*/
-#robot-loading-field {
-	display: inline-block;
-	height: 100%;
-	width: 26px;
-	position: relative;
-}
-#robot-loading-field > span {
-	color: #335C80;
-	font-size: 10px;
-	transform: scale(.7);
-	position: absolute;
-	top: -12px;
-}
-#robot-loading-circle1 {
-	animation: rlc1 .8s linear infinite alternate;
-}
-@keyframes rlc1 {
-0% {
-	margin-top: -6px;
-}
-25% {
-	margin-top: 0px;
-}
-50% {
-	margin-top: 6px;
-}
-75% {
-	margin-top: 0px;
-}
-100% {
-	margin-top: -6px;
-}
-}
-#robot-loading-circle2 {
-	animation: rlc2 .8s linear infinite;
-	margin-left: 8px;
-}
-@keyframes rlc2 {
-0% {
-	margin-top: 0px;
-}
-25% {
-	margin-top: -6px;
-}
-50% {
-	margin-top: 0px;
-}
-75% {
-	margin-top: 6px;
-}
-100% {
-	margin-top: 0px;
-}
-}
-#robot-loading-circle3 {
-	animation: rlc3 .8s linear infinite alternate;
-	margin-left: 16px;
-}
-@keyframes rlc3 {
-0% {
-	margin-top: 6px;
-}
-25% {
-	margin-top: 0px;
-}
-50% {
-	margin-top: -6px;
-}
-75% {
-	margin-top: 0px;
-}
-100% {
-	margin-top: 6px;
-}
 }
