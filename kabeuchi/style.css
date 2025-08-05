@@ -2,163 +2,125 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	user-select: none;
-}
-
-css{
-	touch-action: none;
 }
 body {
-	box-sizing: border-box;
-	background: #FFF;
+	background: white;
 	font-family: sans-serif;
-	tap-highlight-color: rgba(0, 0, 0, 0);
 	overflow-x: hidden;
 }
-
-
-/*---------- チャットボットここから  ----------*/
-/* 今回は、li（幅100%）の中に、div（吹き出し）を
-挿入する。吹き出しの三角形は疑似要素を使用する。 */
-/*チャットボット本体*/
 #chatbot {
+	display: block;
+	margin: 0 auto;
 	height: 100dvh;
-	width: 100dvw;
-	position: fixed;
+	width: min(50rem,100%);
 	overflow: hidden;
 	opacity: 1;
-	background: #FFF;
+	background: white;
 }
-
 #chatbot-header {
 	height: 60px;
-	background: #335C80;
+	background: Steelblue;
 	position: relative;
 	display: flex;
-	justify-content:space-between;
+	justify-content: space-between;
 }
 #chatbot-logo {
-	color: #FFF;
+	color: White;
 	line-height: 60px;
 	padding: 0 30px;
 	font-size: large;
 }
-
-/*チャットのフィールド*/
 #chatbot-body {
-	width: 100dvw;
 	height: calc(100dvh - 110px);
-	padding-top: 10px;
-	background: #FFF;
-	box-sizing: border-box;
-	/*横向きのスクロール禁止*/
+	background: White;
 	overflow-x: hidden;
-	/*縦向きのスクロール許可*/
 	overflow-y: scroll;
+	padding-top: 1em;
+	list-style: none;
 }
-
 #chatbot-footer {
-	width: 100dvw;
 	height: 50px;
 	display: flex;
-	box-sizing: border-box;
-	background: #FFF;
-	border-top: 1.5px solid #EEE;
+	background: White;
+	border-top: 1.5px solid #eee;
 }
-/*入力する場所*/
 #chatbot-text {
 	height: 40px;
-	width: 72dvw;
 	display: block;
 	font-size: normal;
-	box-sizing: border-box;
 	padding-left: 10px;
-	margin: auto 10px auto 15px;
-	color: #777;
+	width: calc(100% - 6rem);
+	color: black;
 	border: 0;
 	outline: 0;
 }
-#chatbot-text:focus{
+#chatbot-text:focus {
 	border: none;
-	outline: none;
+	outline: 0;
 }
-/*送信ボタン*/
-.action-button{
+.action-button {
 	cursor: pointer;
-	height: 35px;
-	padding: 0 20px;
-	margin: auto;
-	margin-right: 15px;
+	height: 100%;
+	width: 6rem;
+	padding: 0 5px;
+	margin: 0;
 	font-size: large;
-	background: #335C80;
-	color: white;
+	background: Steelblue;
+	color: White;
 	display: block;
-	/*デフォルトのボーダーを消す*/
 	border: none;
-	box-sizing: border-box;
 	border-radius: 7px;
 }
-.action-button:active{
+.action-button:hover {
 	outline: 0;
-	background: #86ABBF;
+	background: Cornflowerblue;
 }
-
-#chatbot-ul{
-	/*ulのデフォルの隙間を消す*/
-	padding: 0;
-	list-style: none;
+.action-button:active {
+	outline: 0;
+	background: Lightsteelblue;
+	color: Slategray;
 }
-#chatbot-ul > li{
+#chatbot-body > li {
 	position: relative;
-	/* display: block; */
 	width: 100%;
-	padding-bottom: 10px;
+	padding: 10px auto;
 	word-wrap: break-word;
 }
-#chatbot-ul > li > div.chatbot-left,
-#chatbot-ul > li > div.chatbot-right{
+#chatbot-body > li > .chatbot-left,
+#chatbot-body > li > .chatbot-right {
 	display: inline-block;
-	box-sizing: border-box;
 	min-height: 23px;
 	max-width: 70%;
-	padding: 7px 13px;
-	font-size: normal;
+	padding: 7px 15px;
+	font-size: 1rem;
 	line-height: 1.3em;
 	position: relative;
 }
-
-#chatbot-ul > li > div.chatbot-short {
+#chatbot-body > li > .chatbot-short {
 	width: 53%;
 }
-.chatbot-time{
+.chatbot-time {
+	margin: 0 10px;
 	display: block;
-	font-size:small;
-	color: lightgray;
+	font-size: small;
+	color: Darkgray;
 }
-/*相手の吹き出しのデザイン*/
-.chatbot-left{
-	margin-left: 20px;
-	background: #E6F0F7;
+.chatbot-left {
+	margin-left: 10px;
+	background: Aliceblue;
 	border-radius: 0 9px 9px 9px;
-	color: #1A5F80;
+	color: Steelblue;
 }
-.chatbot-left-rounded {
-	margin-left: 20px;
-	background: #E6F0F7;
-	border-radius: 9px;
-	color: #1A5F80;
-}
-/*自分の吹き出し*/
-.chatbot-right{
-	margin-right: 20px;
-	background: #456F99;
+.chatbot-right {
+	margin-right: 10px;
+	background: Steelblue;
 	text-align: left;
 	border-radius: 9px 0 9px 9px;
-	color: #FFF;
+	color: White;
 }
-.left{
+.left {
 	text-align: left;
 }
-.right{
+.right {
 	text-align: right;
 }

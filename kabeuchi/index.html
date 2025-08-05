@@ -1,29 +1,23 @@
 <!DOCTYPE html>
-<html lang= "ja">
+<html lang="ja">
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width">
-		<meta http-equiv= "content-type" charset= "utf-8">
-		<title>壁打ちbot</title>
-		<link href="style.css" rel="stylesheet"/>
+		<title>壁打ちチャット</title>
+		<link href="style.css" rel="stylesheet">
 		<script src="script/script.js" defer></script>
 	</head>
 	<body>
-		<div id= "chatbot">
-			<div id= "chatbot-header">
-				<div id= "chatbot-logo">Chat</div>
-				<input type="submit" value="Save" class="action-button" id="chatbot-save"/>
+		<div id="chatbot">
+			<div id="chatbot-header">
+				<input type="button" class="action-button" value="Chat">
+				<input type="button" class="action-button" value="Save" id="chatbot-save">
 			</div>
-			<div id= "chatbot-body"> <ul id= "chatbot-ul"></ul> </div>
-			<!--入力場所，送信ボタン-->
-			<form onsubmit= "return false">
-				<div id= "chatbot-footer">
-					<input type= "text" id= "chatbot-text" class= "browser-default" placeholder= "テキストを入力"/>
-					<input type= "submit" value= "Send" class="action-button" id="chatbot-submit"/>
-				</div>
+			<ul id="chatbot-body"></ul>
+			<form onsubmit="return false" id="chatbot-footer" name="chatbot-footer">
+				<textarea id="chatbot-text" placeholder="テキストを入力"></textarea>
+				<input type="submit" value="Send" class="action-button" id="chatbot-submit">
 			</form>
 		</div>
 	</body>
 </html>
-<!--
-このページは https://mf3px.sakura.ne.jp/chatbot2/ を丸パクリしています。
--->
