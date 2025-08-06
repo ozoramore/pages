@@ -11,7 +11,7 @@ body {
 }
 #chatbot {
 	margin: 0 auto;
-	height: 100vh;
+	height: 100dvh;
 	width: min(50rem,100%);
 	overflow: hidden;
 	display: flex;
