@@ -8,9 +8,16 @@
 		<script src="script/script.js" defer></script>
 	</head>
 	<body>
+		<div id="popup" class="popup">
+			<div id="popup-background"></div>
+			<form class="popup-content">
+				<h2>設定</h2>
+				<input type="checkbox" id="popup-checkbox-toggle-reply">返信する
+			</form>
+		</div>
 		<div id="chatbot">
 			<div id="chatbot-header">
-				<input type="button" class="action-button" value="Chat">
+				<input type="button" class="action-button" value="Chat" id="chatbot-menu">
 				<input type="button" class="action-button" value="Save" id="chatbot-save">
 			</div>
 			<ul id="chatbot-body"></ul>

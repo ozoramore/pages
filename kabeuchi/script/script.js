@@ -1,7 +1,7 @@
 'use strict';
 
 // botの返信する内容
-let botReply = ["はい", "はい", "うん", "うん", ""];
+let botReply = ["はい", "うん"];
 // ユーザーの回答内容の全てを記憶する配列
 let userData = [];
 
@@ -12,9 +12,19 @@ const chatbot = document.getElementById('chatbot');
 const chatbotBody = document.getElementById('chatbot-body');
 const chatbotFooter = document.getElementById('chatbot-footer');
 
+const chatbotMenu = document.getElementById('chatbot-menu');
+
+const popupDivision = document.getElementById('popup')
+const popupBackground= document.getElementById('popup-background')
+const popupReplyCheckBox = document.getElementById('popup-checkbox-toggle-reply')
+
+popupReplyCheckBox.checked = true;
+
 userText.addEventListener("keydown", sendByCtrlEnter);
 chatSubmitBtn.addEventListener('click', displayUserOutputAndReply);
 chatDumpBtn.addEventListener('click', saveChatLog);
+chatbotMenu.addEventListener("click", openPopup);
+popupBackground.addEventListener("click", closePopup);
 
 robotOutput('よろしくお願いします。');
 
@@ -25,11 +35,6 @@ robotOutput('よろしくお願いします。');
 // 抽選
 function lot(data) {
 	return data[Math.floor(Math.random() * data.length)];
-}
-
-// 一番下までスクロール
-function scroll_element(e) {
-	e.scroll(0, e.scrollHeight - e.clientHeight);
 }
 
 //
@@ -56,7 +61,7 @@ function displayUserOutputAndReply() {
 	if (!ret) return;
 	userData.push(txt);
 	const rep = lot(botReply);
-	robotOutput(rep);
+	if(popupReplyCheckBox.checked) robotOutput(rep);
 }
 
 // 書き込んだ内容のセーブ
@@ -108,4 +113,14 @@ function userOutput(content) {
 
 function robotOutput(content) {
 	return post(content, false);
+}
+
+
+// ここからポップアップ
+function openPopup() {
+	popupDivision.style.display = "block";
+}
+
+function closePopup() {
+	popupDivision.style.display = "none";
 }
