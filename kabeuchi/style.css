@@ -7,15 +7,16 @@ body {
 	background: white;
 	font-family: sans-serif;
 	overflow-x: hidden;
+	background: Aliceblue;
 }
 #chatbot {
-	display: block;
 	margin: 0 auto;
-	height: 100dvh;
+	height: 100vh;
 	width: min(50rem,100%);
 	overflow: hidden;
-	opacity: 1;
-	background: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 #chatbot-header {
 	height: 60px;
@@ -24,98 +25,84 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-#chatbot-logo {
-	color: White;
-	line-height: 60px;
-	padding: 0 30px;
-	font-size: large;
-}
 #chatbot-body {
-	height: calc(100dvh - 110px);
 	background: White;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	flex: 1;
 	padding-top: 1em;
 	list-style: none;
 }
 #chatbot-footer {
-	height: 50px;
+	height: 4rem;
 	display: flex;
+	justify-content: space-between;
 	background: White;
-	border-top: 1.5px solid #eee;
 }
 #chatbot-text {
-	height: 40px;
-	display: block;
-	font-size: normal;
-	padding-left: 10px;
-	width: calc(100% - 6rem);
+	flex: 1;
+	padding: 0.5rem;
 	color: black;
-	border: 0;
-	outline: 0;
+	border: 0.1rem solid Lightsteelblue;
+	border-radius: 0.5rem;
+	resize: none;
 }
 #chatbot-text:focus {
-	border: none;
+	border: 0.2rem solid Steelblue;
 	outline: 0;
 }
 .action-button {
 	cursor: pointer;
-	height: 100%;
 	width: 6rem;
-	padding: 0 5px;
+	padding: 0 0.5rem;
 	margin: 0;
 	font-size: large;
 	background: Steelblue;
 	color: White;
-	display: block;
 	border: none;
-	border-radius: 7px;
+	border-radius: 0.5rem;
+	outline: 0;
 }
 .action-button:hover {
-	outline: 0;
 	background: Cornflowerblue;
 }
 .action-button:active {
-	outline: 0;
 	background: Lightsteelblue;
 	color: Slategray;
 }
 #chatbot-body > li {
 	position: relative;
 	width: 100%;
-	padding: 10px auto;
+	padding: 1rem auto;
 	word-wrap: break-word;
 }
-#chatbot-body > li > .chatbot-left,
-#chatbot-body > li > .chatbot-right {
+.chatbot-left,
+.chatbot-right {
 	display: inline-block;
-	min-height: 23px;
+	min-height: 2rem;
 	max-width: 70%;
-	padding: 7px 15px;
+	padding: 0.5rem 1rem;
 	font-size: 1rem;
 	line-height: 1.3em;
 	position: relative;
 }
-#chatbot-body > li > .chatbot-short {
-	width: 53%;
-}
 .chatbot-time {
-	margin: 0 10px;
+	margin: 0 1rem;
 	display: block;
 	font-size: small;
 	color: Darkgray;
 }
 .chatbot-left {
-	margin-left: 10px;
+	margin-left: 1rem;
 	background: Aliceblue;
-	border-radius: 0 9px 9px 9px;
+	border-radius: 0 1rem 1rem 1rem;
 	color: Steelblue;
 }
 .chatbot-right {
-	margin-right: 10px;
-	background: Steelblue;
 	text-align: left;
-	border-radius: 9px 0 9px 9px;
+	margin-right: 1rem;
+	background: Steelblue;
+	border-radius: 1rem 0 1rem 1rem;
 	color: White;
 }
 .left {
