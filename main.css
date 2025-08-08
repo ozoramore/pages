@@ -1,11 +1,13 @@
 header {
 	margin: 0;
 	padding: 0;
+
 	* {
 		font-style: none;
 		text-decoration: none;
 		color: black;
 	}
+
 	.breadcrumb {
 		margin-bottom: 0.2rem;
 	}
@@ -14,12 +16,14 @@ header {
 		margin: 0;
 		border-bottom: 0.1rem black solid;
 	}
+
 	.description {
 		border-top: 0;
 		margin-top: 0;
 		margin-bottom: auto;
 		text-align: right;
 	}
+
 	padding-bottom: 2vh;
 }
 
@@ -49,14 +53,19 @@ figcaption {
 	margin-bottom: 1rem;
 }
 
-img, svg {
+img,
+svg {
 	margin: 0;
 	width: min(30rem, 20vw, 90%);
 	height: auto;
 	border: 0.1rem black solid;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
 	clear: both;
 	list-style: none;
 	font-size: 100%;
@@ -67,6 +76,7 @@ h2, h3, h4, h5, h6 {
 h2 {
 	font-size: 120%;
 }
+
 h2::before {
 	content: "■";
 }
@@ -79,6 +89,7 @@ p {
 	margin: 0;
 	padding: 0;
 }
+
 main a {
 	text-decoration: none;
 	border-bottom: 0.1rem solid;
@@ -88,32 +99,43 @@ b {
 	font-size: 110%;
 }
 
-li, dd, td, table, .custom_emoji {
-	>p{
+li,
+dd,
+td,
+table,
+.custom_emoji {
+	>p {
 		display: inline;
 	}
-	img{
+
+	img {
 		width: min(5rem, 50%);
 		border: none;
 	}
 }
 
-ol, ul {
+ol,
+ul {
 	margin: 0.5rem;
 }
 
 li {
 	list-style-type: square;
-	>ul, >ol {
+
+	>ul,
+	>ol {
 		margin-left: 0;
 		padding-left: 0.5rem;
 	}
+
 	padding: 0.1rem;
 }
 
 dl {
 	padding: 0;
-	margin-left: 1rem
+
+	margin-left: 1rem;
+
 	dl {
 		margin: 0;
 	}
@@ -126,12 +148,15 @@ dt {
 
 dd {
 	margin-left: 1rem;
+
 	>p {
 		display: inline;
 	}
 }
 
-table, th, td {
+table,
+th,
+td {
 	padding: 0;
 	border: 0.1rem black solid;
 	border-collapse: collapse;
@@ -151,12 +176,13 @@ address {
 	padding-bottom: 1vh;
 }
 
-main, footer, hr {
+main,
+footer,
+hr {
 	margin-top: 0.5vh;
 	border: none;
 	border-bottom: 0.1rem black solid;
 }
-
 
 body {
 	margin: 5vw;

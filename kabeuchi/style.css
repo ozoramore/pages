@@ -3,21 +3,24 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
 body {
 	background: white;
 	font-family: sans-serif;
 	overflow-x: hidden;
 	background: Aliceblue;
 }
+
 #chatbot {
 	margin: 0 auto;
 	height: 100dvh;
-	width: min(50rem,100%);
+	width: min(50rem, 100%);
 	overflow: hidden;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
+
 #chatbot-header {
 	height: 60px;
 	background: Steelblue;
@@ -25,6 +28,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
+
 #chatbot-body {
 	background: White;
 	overflow-x: hidden;
@@ -33,12 +37,14 @@ body {
 	padding-top: 1em;
 	list-style: none;
 }
+
 #chatbot-footer {
 	height: 4rem;
 	display: flex;
 	justify-content: space-between;
 	background: White;
 }
+
 #chatbot-text {
 	flex: 1;
 	padding: 0.5rem;
@@ -47,10 +53,12 @@ body {
 	border-radius: 0.5rem;
 	resize: none;
 }
+
 #chatbot-text:focus {
 	border: 0.2rem solid Steelblue;
 	outline: 0;
 }
+
 .action-button {
 	cursor: pointer;
 	width: 6rem;
@@ -63,19 +71,23 @@ body {
 	border-radius: 0.5rem;
 	outline: 0;
 }
+
 .action-button:hover {
 	background: Cornflowerblue;
 }
+
 .action-button:active {
 	background: Lightsteelblue;
 	color: Slategray;
 }
-#chatbot-body > li {
+
+#chatbot-body>li {
 	position: relative;
 	width: 100%;
 	padding-bottom: 1rem;
 	word-wrap: break-word;
 }
+
 .chatbot-left,
 .chatbot-right {
 	display: inline-block;
@@ -87,18 +99,21 @@ body {
 	line-height: 1.3em;
 	position: relative;
 }
+
 .chatbot-time {
 	margin: 0 1rem;
 	display: block;
 	font-size: small;
 	color: Darkgray;
 }
+
 .chatbot-left {
 	margin-left: 1rem;
 	background: Aliceblue;
 	border-radius: 0 1rem 1rem 1rem;
 	color: Steelblue;
 }
+
 .chatbot-right {
 	text-align: left;
 	margin-right: 1rem;
@@ -106,9 +121,11 @@ body {
 	border-radius: 1rem 0 1rem 1rem;
 	color: White;
 }
+
 .left {
 	text-align: left;
 }
+
 .right {
 	text-align: right;
 }
@@ -117,6 +134,7 @@ body {
 	margin: auto;
 	padding: auto;
 }
+
 .popup {
 	display: none;
 	position: fixed;
@@ -126,13 +144,14 @@ body {
 	justify-content: center;
 	align-items: center;
 }
+
 #popup-background {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(0,0,0,0.7);
+	background: rgba(0, 0, 0, 0.7);
 }
 
 .popup-content {
@@ -149,4 +168,3 @@ body {
 	background: Aliceblue;
 	border-radius: 0.5em;
 }
-

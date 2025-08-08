@@ -15,7 +15,7 @@ const chatbotFooter = document.getElementById('chatbot-footer');
 const chatbotMenu = document.getElementById('chatbot-menu');
 
 const popupDivision = document.getElementById('popup')
-const popupBackground= document.getElementById('popup-background')
+const popupBackground = document.getElementById('popup-background')
 const popupReplyCheckBox = document.getElementById('popup-checkbox-toggle-reply')
 
 popupReplyCheckBox.checked = true;
@@ -61,7 +61,7 @@ function displayUserOutputAndReply() {
 	if (!ret) return;
 	userData.push(txt);
 	const rep = lot(botReply);
-	if(popupReplyCheckBox.checked) robotOutput(rep);
+	if (popupReplyCheckBox.checked) robotOutput(rep);
 }
 
 // 書き込んだ内容のセーブ
