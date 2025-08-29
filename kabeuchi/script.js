@@ -1,7 +1,9 @@
 'use strict';
 
+// URLからParam取得
+var params = Object.fromEntries(new URLSearchParams(window.location.search));
 // botの返信する内容
-let botReply = ["はい", "うん"];
+let botReply = params.reply == null? ["はい", "うん"] : params.reply.split(',');
 // ユーザーの回答内容の全てを記憶する配列
 let userData = [];
 
@@ -14,9 +16,9 @@ const chatbotFooter = document.getElementById('chatbot-footer');
 
 const chatbotMenu = document.getElementById('chatbot-menu');
 
-const popupDivision = document.getElementById('popup')
-const popupBackground = document.getElementById('popup-background')
-const popupReplyCheckBox = document.getElementById('popup-checkbox-toggle-reply')
+const popupDivision = document.getElementById('popup');
+const popupBackground = document.getElementById('popup-background');
+const popupReplyCheckBox = document.getElementById('popup-checkbox-toggle-reply');
 
 popupReplyCheckBox.checked = true;
 
@@ -43,13 +45,12 @@ function lot(data) {
 
 // Enterキーが押された時にSubmitされるのを抑制する
 function sendByCtrlEnter(event) {
-	if (event.key == 'Enter') {
-		if (event.ctrlKey) {
-			chatSubmitBtn.click();
-		} else {
-			event.preventDefault();
-			userText.value = userText.value + '\n';
-		}
+	if (event.key != 'Enter') { return; }
+	if (event.ctrlKey) {
+		chatSubmitBtn.click();
+	} else {
+		event.preventDefault();
+		userText.value = userText.value + '\n';
 	}
 }
 
@@ -114,7 +115,6 @@ function userOutput(content) {
 function robotOutput(content) {
 	return post(content, false);
 }
-
 
 // ここからポップアップ
 function openPopup() {
