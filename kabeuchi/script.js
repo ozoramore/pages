@@ -3,6 +3,7 @@
 // URLからParam取得
 var params = Object.fromEntries(new URLSearchParams(window.location.search));
 // botの返信する内容
+let initMessage = params.init == null? "" : params.first;
 let botReply = params.reply == null? ["はい", "うん"] : params.reply.split(',');
 // ユーザーの回答内容の全てを記憶する配列
 let userData = [];
@@ -28,7 +29,7 @@ chatDumpBtn.addEventListener('click', saveChatLog);
 chatbotMenu.addEventListener("click", openPopup);
 popupBackground.addEventListener("click", closePopup);
 
-robotOutput('よろしくお願いします。');
+robotOutput(initMessage);
 
 //
 // -- ここから汎用の処理にしたい --
