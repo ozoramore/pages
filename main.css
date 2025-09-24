@@ -90,10 +90,12 @@ p {
 	padding: 0;
 }
 
+/*
 main a {
 	text-decoration: none;
 	border-bottom: 0.1rem solid;
 }
+*/
 
 b {
 	font-size: 110%;
@@ -102,33 +104,41 @@ b {
 li,
 dd,
 td,
-table,
-.custom_emoji {
+table {
 	>p {
 		display: inline;
 	}
 
 	img {
-		width: min(5rem, 50%);
+		width: auto;
 		border: none;
+		vertical-align: middle;
+	}
+}
+
+.custom_emoji {
+	img {
+		border: none;
+		width: min(5rem, 50%);
 	}
 }
 
 ol,
 ul {
 	margin: 0.5rem;
+	overflow: overlay;
 }
 
 li {
 	list-style-type: square;
+	white-space: nowrap;
+
 
 	>ul,
 	>ol {
 		margin-left: 0;
 		padding-left: 0.5rem;
 	}
-
-	padding: 0.1rem;
 }
 
 dl {
