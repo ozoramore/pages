@@ -32,33 +32,13 @@ header {
 	text-align: right;
 	font-size: small;
 	font-style: italic;
+	text-wrap: nowrap;
+	overflow: hidden;
 }
 
 .lastupdate::before {
 	font-style: normal;
 	content: "lastupdate:";
-}
-
-figure {
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-	margin-right: 1rem;
-}
-
-figcaption {
-	caption-side: bottom;
-	margin: 0;
-	padding: 0;
-	margin-bottom: 1rem;
-}
-
-img,
-svg {
-	margin: 0;
-	width: min(30rem, 20vw, 90%);
-	height: auto;
-	border: 0.1rem black solid;
 }
 
 h2,
@@ -89,13 +69,6 @@ p {
 	margin: 0;
 	padding: 0;
 }
-
-/*
-main a {
-	text-decoration: none;
-	border-bottom: 0.1rem solid;
-}
-*/
 
 b {
 	font-size: 110%;
@@ -174,7 +147,7 @@ td {
 }
 
 code {
-	font-size: 110%;
+	font-size: unset;
 	background-color: lightgray;
 }
 
@@ -195,9 +168,9 @@ hr {
 }
 
 body {
-	margin: 5vw;
-	margin-top: 0;
-	width: min(90vw, 80rem);
+	margin: 0;
+	padding: 0.5em;
+	width: min(calc(100%-1em), 80rem);
 }
 
 .avatar {
