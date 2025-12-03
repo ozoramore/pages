@@ -1,3 +1,7 @@
+:root {
+	color-scheme: light dark;
+}
+
 header {
 	margin: 0;
 	padding: 0;
@@ -5,7 +9,7 @@ header {
 	* {
 		font-style: none;
 		text-decoration: none;
-		color: black;
+		color: CanvasText;
 	}
 
 	.breadcrumb {
@@ -14,7 +18,7 @@ header {
 
 	h1 {
 		margin: 0;
-		border-bottom: 0.1rem black solid;
+		border-bottom: 0.1rem CanvasText solid;
 	}
 
 	.description {
@@ -141,7 +145,7 @@ table,
 th,
 td {
 	padding: 0;
-	border: 0.1rem black solid;
+	border: 0.1rem CanvasText solid;
 	border-collapse: collapse;
 	font-size: small;
 }
@@ -149,6 +153,7 @@ td {
 code {
 	font-size: unset;
 	background-color: lightgray;
+	color: black;
 }
 
 main {
@@ -164,7 +169,7 @@ footer,
 hr {
 	margin-top: 0.5vh;
 	border: none;
-	border-bottom: 0.1rem black solid;
+	border-bottom: 0.1rem CanvasText solid;
 }
 
 body {
