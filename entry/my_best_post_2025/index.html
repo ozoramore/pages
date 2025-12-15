@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="zola">
+<meta name="color-scheme" content="light dark"><link rel="stylesheet" href="https://t2arc.net/index.css"><link rel="icon" href="/icon.svg" type="image/svg+xml">
+<title>t2arc.net &gt; 自鯖の今年のベスト投稿</title>
+</head>
+<body>
+<header>
+<div class="breadcrumb"><a href="/">t2arc.net</a>/<a href="https:&#x2F;&#x2F;t2arc.net&#x2F;entry&#x2F;">記事一覧</a>/</div>
+<h1>自鯖の今年のベスト投稿</h1>
+<p class="description">遅刻です。</p>
+</header>
+<main><p>この記事は<a href="https://adventar.org/calendars/12131">しょぼねこ Advent Calendar 2025</a>の11日目の記事でした。</p>
+<h2 id="今年のベスト投稿はこちら！">今年のベスト投稿はこちら！</h2>
+
+
+<div class="post">
+	<blockquote cite="https:&#x2F;&#x2F;social.t2arc.net&#x2F;objects&#x2F;019623ff-0c01-c203-1f07-c966ce9c7e15">
+		<p>でも日本のActivityPubにおいてMastodonとMisskey以外の実装を使ってる人は人間じゃないから…</p>
+		<cite>2025-04-11T08:37:19.489209Z <a href="https://social.t2arc.net/users/ozoramore">@ozoramore</a></cite>
+	</blockquote>
+</div>
+<hr />
+<h2 id="解説編">解説編</h2>
+<p><a href="https://codeberg.org/silverpill/mitra">mitra</a> には埋め込みポストを生成する方法はないので、Zolaの<a href="https://www.getzola.org/documentation/templates/overview/#load-data">load_data</a>を利用しました。</p>
+<pre><code>post = load_data(url = post_url, format=&quot;json&quot;, headers=[&quot;Accept=application&#x2F;activity+json&quot;] ) %}
+</code></pre>
+<p>このように投稿のActivityを読み込んで、あとは<code>{{post.content}}</code>とするとポスト内容を取得できます。</p>
+<p>Zolaでブログを書いているActivityPubユーザーは是非参考にしてください。 <del>そんなに人数いるのかな…</del></p>
+<p>では！</p>
+</main>
+<footer>
+<p>注があるものを除いて, このサイトの内容物は
+<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0ライセンス</a>
+の下に提供されています。</p>
+<p class="lastupdate">2025-12-15T18:00:00+0900</p>
+</footer>
+</body>
+</html>
