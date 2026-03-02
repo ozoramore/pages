@@ -13,7 +13,7 @@
 <h1>自鯖の今年のベスト投稿</h1>
 <p class="description">遅刻です。</p>
 </header>
-<main><p>この記事は<a href="https://adventar.org/calendars/12131">しょぼねこ Advent Calendar 2025</a>の11日目の記事でした。</p>
+<main><p>この記事は<a rel="external" href="https://adventar.org/calendars/12131">しょぼねこ Advent Calendar 2025</a>の11日目の記事でした。</p>
 <h2 id="今年のベスト投稿はこちら！">今年のベスト投稿はこちら！</h2>
 
 
@@ -25,8 +25,8 @@
 </div>
 <hr />
 <h2 id="解説編">解説編</h2>
-<p><a href="https://codeberg.org/silverpill/mitra">mitra</a> には埋め込みポストを生成する方法はないので、Zolaの<a href="https://www.getzola.org/documentation/templates/overview/#load-data">load_data</a>を利用しました。</p>
-<pre><code>post = load_data(url = post_url, format=&quot;json&quot;, headers=[&quot;Accept=application&#x2F;activity+json&quot;] ) %}
+<p><a rel="external" href="https://codeberg.org/silverpill/mitra">mitra</a> には埋め込みポストを生成する方法はないので、Zolaの<a rel="external" href="https://www.getzola.org/documentation/templates/overview/#load-data">load_data</a>を利用しました。</p>
+<pre><code>post = load_data(url = post_url, format=&quot;json&quot;, headers=[&quot;Accept=application/activity+json&quot;] ) %}
 </code></pre>
 <p>このように投稿のActivityを読み込んで、あとは<code>{{post.content}}</code>とするとポスト内容を取得できます。</p>
 <p>Zolaでブログを書いているActivityPubユーザーは是非参考にしてください。 <del>そんなに人数いるのかな…</del></p>

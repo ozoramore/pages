@@ -2,33 +2,52 @@
 	color-scheme: light dark;
 }
 
+html {
+	font-family: unset;
+}
+
+body {
+	width: min(calc(100%-1em), 80rem);
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	flex: 1;
+	padding: 0 0.5rem;
+	overflow-x: hidden;
+	word-break: break-word;
+	overflow-wrap: break-word;
+}
+
 header {
 	margin: 0;
-	padding: 0;
+	padding: 0 0 2vh;
+}
 
-	* {
-		font-style: none;
-		text-decoration: none;
-		color: CanvasText;
-	}
-
-	.breadcrumb {
-		margin-bottom: 0.2rem;
-	}
-
-	h1 {
-		margin: 0;
-		border-bottom: 0.1rem CanvasText solid;
-	}
-
-	.description {
-		border-top: 0;
-		margin-top: 0;
-		margin-bottom: auto;
-		text-align: right;
-	}
-
+main {
 	padding-bottom: 2vh;
+	border-bottom: 0.1rem CanvasText solid;
+}
+
+footer {
+	padding-bottom: 2vh;
+}
+
+/* ヘッダ・フッタ内要素 */
+header * {
+	font-style: none;
+	text-decoration: none;
+	color: CanvasText;
+}
+
+.breadcrumb {
+	margin-bottom: 0.2rem;
+}
+
+.description {
+	border-top: 0;
+	margin-top: 0;
+	margin-bottom: auto;
+	text-align: right;
 }
 
 .lastupdate {
@@ -38,13 +57,30 @@ header {
 	font-style: italic;
 	text-wrap: nowrap;
 	overflow: hidden;
+
+	&::before {
+		font-style: normal;
+		content: "lastupdate:";
+	}
 }
 
-.lastupdate::before {
-	font-style: normal;
-	content: "lastupdate:";
+address {
+	padding-bottom: 1vh;
 }
 
+/* 画像要素 */
+.avatar {
+	width: 5rem;
+	height: auto;
+}
+
+.custom_emoji img {
+	border: none;
+	width: min(5rem, 50%);
+}
+
+/* 見出し */
+h1,
 h2,
 h3,
 h4,
@@ -53,8 +89,12 @@ h6 {
 	clear: both;
 	list-style: none;
 	font-size: 100%;
-	margin: 0.5rem;
-	margin-left: 0;
+	margin: 0.5rem 0;
+}
+
+h1 {
+	font-size: 200%;
+	border-bottom: 0.1rem CanvasText solid;
 }
 
 h2 {
@@ -69,6 +109,7 @@ h3::before {
 	content: "□";
 }
 
+/* 本文内の諸表現 */
 p {
 	margin: 0;
 	padding: 0;
@@ -78,38 +119,29 @@ b {
 	font-size: 110%;
 }
 
-li,
-dd,
-td,
-table {
-	>p {
-		display: inline;
-	}
-
-	img {
-		width: auto;
-		border: none;
-		vertical-align: middle;
-	}
+code {
+	font-size: unset;
+	background-color: lightgray;
+	color: black;
+	display: inline-block;
+	padding: 0.4rem;
 }
 
-.custom_emoji {
-	img {
-		border: none;
-		width: min(5rem, 50%);
-	}
+pre>code {
+	display: block;
+	padding: 1em;
+	overflow-x: scroll;
 }
 
-ol,
-ul {
-	margin: 0.5rem;
-	overflow: overlay;
+hr {
+	border-bottom: 0.1rem CanvasText solid;
 }
 
-li {
+/* 入れ子要素 */
+ul li,
+ol li {
 	list-style-type: square;
 	white-space: nowrap;
-
 
 	>ul,
 	>ol {
@@ -120,65 +152,33 @@ li {
 
 dl {
 	padding: 0;
-
 	margin-left: 1rem;
 
-	dl {
-		margin: 0;
+	dt {
+		font-weight: bold;
+	}
+
+	dd {
+		margin-left: 1rem;
+
+		>p {
+			display: inline;
+		}
+
+		dl {
+			margin: 0;
+		}
 	}
 }
 
-dt {
-	margin-left: 0;
-	font-weight: bold;
-}
-
-dd {
-	margin-left: 1rem;
-
-	>p {
-		display: inline;
-	}
-}
-
-table,
-th,
-td {
-	padding: 0;
+table {
 	border: 0.1rem CanvasText solid;
 	border-collapse: collapse;
-	font-size: small;
-}
 
-code {
-	font-size: unset;
-	background-color: lightgray;
-	color: black;
-}
-
-main {
-	padding-bottom: 2vh;
-}
-
-address {
-	padding-bottom: 1vh;
-}
-
-main,
-footer,
-hr {
-	margin-top: 0.5vh;
-	border: none;
-	border-bottom: 0.1rem CanvasText solid;
-}
-
-body {
-	margin: 0;
-	padding: 0.5em;
-	width: min(calc(100%-1em), 80rem);
-}
-
-.avatar {
-	width: 5rem;
-	height: auto;
+	tr,
+	th,
+	td {
+		font-size: small;
+		padding: 0;
+	}
 }
