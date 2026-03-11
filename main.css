@@ -133,6 +133,11 @@ pre>code {
 	overflow-x: scroll;
 }
 
+.post {
+	border-left: 0.5rem lightgray solid;
+	padding: 0.5rem;
+}
+
 hr {
 	border-bottom: 0.1rem CanvasText solid;
 }
