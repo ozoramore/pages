@@ -1,128 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <opml version="2.0">
 	<head>
 		<title>feeds</title>
-		<dateModified>2025-05-26T13:59:18+0900</dateModified>
+		<dateModified>2026-05-20T14:20:46+0900</dateModified>
 	</head>
 	<body>
 		<!-- ニュース総合 -->
-		<outline type="rss"
-			text="NHKニュース"
-			htmlUrl="http://www3.nhk.or.jp/news/"
-			xmlUrl="https://www.nhk.or.jp/rss/news/cat0.xml"
+		<outline type="rss" encoding="utf-8"
+			text="NHKONEニュース"
+			xmlUrl="https://news.web.nhk/n-data/conf/na/rss/cat0.xml"
+			htmlUrl="http://news.web.nhk/newsweb/"
 		/>
-		<outline type="rss"
-			text="静岡新聞(Yahoo)"
-			htmlUrl="https://news.yahoo.co.jp/media/at_s?source=rss"
+
+		<!-- 地域ニュース -->
+		<outline type="rss" encoding="utf-8"
+			text="静岡新聞DIGITAL(Yahoo)"
 			xmlUrl="https://news.yahoo.co.jp/rss/media/at_s/all.xml"
+			htmlUrl="https://www.at-s.com"
+		/>
+		<outline type="rss" encoding="utf-8"
+			text="浜松経済新聞"
+			xmlUrl="https://hamamatsu.keizai.biz/rss.xml"
+			htmlUrl="https://hamamatsu.keizai.biz"
+		/>
+		<outline type="rss" encoding="utf-8"
+			text="【公式】浜松市正直観光協会"
+			xmlUrl="https://jp-hamamatsu.com/feed/"
+			htmlUrl="https://jp-hamamatsu.com/feed/"
 		/>
 
 		<!-- 科学・技術ニュース -->
-		<outline type="rss"
+		<outline type="rss" encoding="utf-8"
 			text="JSTサイエンスポータル"
-			htmlUrl="https://scienceportal.jst.go.jp"
 			xmlUrl="https://scienceportal.jst.go.jp/feed/rss.xml"
+			htmlUrl="https://scienceportal.jst.go.jp/"
 		/>
-		<outline type="rss"
-			text="gihyo.jp"
-			htmlUrl="https://gihyo.jp"
-			xmlUrl="https://gihyo.jp/feed/rss2"
+		<outline type="rss" encoding="UTF-8"
+			text="JSTニュース(プレスリリース)"
+			xmlUrl="https://www.jst.go.jp/rss/press.xml"
+			htmlUrl="https://www.jst.go.jp/pr/"
 		/>
 
-		<!-- スポーツ・芸能・サブカルチャー -->
-		<outline type="rss"
-			text="ラジオNIKKEI 競馬実況web"
-			htmlUrl="https://www.radionikkei.jp/keiba_article/"
-			xmlUrl="https://www.radionikkei.jp/keiba_article/rss.xml"
+		<!-- ITニュース -->
+		<outline type="rss" encoding="utf-8"
+			text="gihyo.jp"
+			xmlUrl="https://gihyo.jp/feed/rss2"
+			htmlUrl="https://gihyo.jp"
 		/>
-		<outline type="rss"
-			text="DailyPortalZ"
-			htmlUrl="https://dailyportalz.jp"
-			xmlUrl="https://dailyportalz.jp/feed/headline"
+		<outline type="rss" encoding="utf-8"
+			text="Publickey1"
+			xmlUrl="https://www.publickey1.jp/atom.xml"
+			htmlUrl="https//www.publickey1.jp"
 		/>
-		<outline type="rss"
-			text="TOWER RECORDS ONLINE"
-			htmlUrl="https://tower.jp/feeds/article"
-			xmlUrl="https://tower.jp/feeds/article/"
-		/>
-		<outline type="rss"
-			text="サンレコ"
-			htmlUrl="https://www.snrec.jp/"
-			xmlUrl="https://www.snrec.jp/rss"
+		<outline type="rss" encoding="utf-8"
+			text="IPA 重要なセキュリティ情報"
+			xmlUrl="https://www.ipa.go.jp/security/alert-rss.rdf"
+			htmlUrl="https://www.ipa.go.jp/security/index.html"
 		/>
 
 		<!-- 新製品情報 -->
-		<outline type="rss"
+		<outline type="rss" encoding="utf-8"
 			text="エルミタージュ秋葉原"
-			htmlUrl="https://www.gdm.or.jp"
 			xmlUrl="https://www.gdm.or.jp/feed"
+			htmlUrl="https://www.gdm.or.jp"
 		/>
-		<outline type="rss"
-			text="INTERNET Watch"
-			htmlUrl="https://internet.watch.impress.co.jp"
-			xmlUrl="https://internet.watch.impress.co.jp/data/rss/1.0/iw/feed.rdf"
-		/>
-		<outline type="rss"
+		<outline type="rss" encoding="utf-8"
 			text="デジカメ Watch"
+			xmlUrl="https://dc.watch.impress.co.jp/data/rss/1.0/dcw/feed.rdf"
 			htmlUrl="https://dc.watch.impress.co.jp"
-			xmlUrl="http://dc.watch.impress.co.jp/cda/rss/digicame.rdf"
 		/>
-		<outline type="rss"
-			text="PHILE WEB 総合"
-			htmlUrl="http://www.phileweb.com/"
-			xmlUrl="https://www.phileweb.com/rss.php"
-		/>
-		<outline type="rss"
-			text="4Gamer.net"
-			htmlUrl="https://www.4gamer.net/"
-			xmlUrl="https://www.4gamer.net/rss/news_topics.xml"
-		/>
-		<outline type="rss"
-			text="Nintendo DREAM WEB"
-			htmlUrl="https://www.ndw.jp"
-			xmlUrl="https://www.ndw.jp/feed/"
-		/>
-		<outline type="rss"
-			text="webCG"
-			htmlUrl="https://www.webcg.net"
-			xmlUrl="https://www.webcg.net/list/feed/rss"
-		/>
-		<outline type="rss"
+		<outline type="rss" encoding="utf-8"
 			text="文具のとびら"
-			htmlUrl="https://www.buntobi.com/"
 			xmlUrl="https://www.buntobi.com/rss.xml"
+			htmlUrl="https://www.buntobi.com"
 		/>
-		<outline type="rss"
-			text="DTMステーション"
-			htmlUrl="https://www.dtmstation.com"
-			xmlUrl="https://www.dtmstation.com/feed"
+		<outline type="rss" encoding="utf-8"
+			text="PHILE WEB 総合"
+			xmlUrl="https://www.phileweb.com/rss.php"
+			htmlUrl="https://www.phileweb.com"
 		/>
 
-		<!-- ソフトウェア更新情報 -->
-		<outline type="rss"
-			text="窓の杜"
-			htmlUrl="https://forest.watch.impress.co.jp"
-			xmlUrl="https://forest.watch.impress.co.jp/data/rss/1.0/wf/feed.rdf"
+		<!-- ゲーム -->
+		<outline type="rss" encoding="utf-8"
+			text="4Gamer.net"
+			xmlUrl="https://www.4gamer.net/rss/news_topics.xml"
+			htmlUrl="https://www.4gamer.net"
 		/>
-		<outline type="rss"
-			text="Vivaldi Browser"
-			htmlUrl="https://vivaldi.com/ja/"
-			xmlUrl="https://vivaldi.com/ja/feed/"
+		<outline type="rss" encoding="utf-8"
+			text="ゲーム文化保存研究所(igcc.jp)"
+			xmlUrl="https://igcc.jp/feed/atom/"
+			htmlUrl="https://igcc.jp"
 		/>
-		<outline type="rss"
-			text="silverpill/mitra"
-			htmlUrl="https://codeberg.org/silverpill/mitra"
-			xmlUrl="https://codeberg.org/silverpill/mitra.rss"
+
+		<!-- オーディオ -->
+		<outline type="rss" encoding="utf-8"
+			text="snrec.jp"
+			xmlUrl="https://www.snrec.jp/rss"
+			htmlUrl="https://www.snrec.jp"
 		/>
-		<outline type="rss"
-			text="silverpill/mitra-web"
-			htmlUrl="https://codeberg.org/silverpill/mitra-web"
-			xmlUrl="https://codeberg.org/silverpill/mitra-web.rss"
+		<outline type="rss" encoding="utf-8"
+			text="DTMステーション"
+			xmlUrl="https://www.dtmstation.com/feed"
+			htmlUrl="https://www.dtmstation.com"
 		/>
-		<outline type="rss"
-			text="Planet Arch Linux"
-			htmlUrl="https://archlinux.org/planet/"
-			xmlUrl="https://archlinux.org/feeds/planet/"
+		<outline type="rss" encoding="utf-8"
+			text="音響・映像・電気設備が好き"
+			xmlUrl="https://rssblog.ameba.jp/holycater/rss20.xml"
+			htmlUrl="https://ameblo.jp/holycater"
+		/>
+
+		<!-- その他読み物 -->
+		<outline type="rss" encoding="utf-8"
+			text="ラジオNIKKEI 競馬実況web"
+			xmlUrl="https://www.radionikkei.jp/keiba_article/rss.xml"
+			htmlUrl="https://www.radionikkei.jp/keiba_article"
+		/>
+		<outline type="rss" encoding="utf-8"
+			text="webCG"
+			xmlUrl="https://www.webcg.net/list/feed/rss"
+			htmlUrl="https://www.webcg.net"
+		/>
+		<outline type="rss" encoding="utf-8"
+			text="DailyPortalZ"
+			xmlUrl="https://dailyportalz.jp/feed/headline"
+			htmlUrl="https://dailyportalz.jp/feed/headline"
+		/>
+		<outline type="rss" encoding="utf-8"
+			text="けおけお速報"
+			xmlUrl="https://keokeoblog.net/?xml"
+			htmlUrl="https://keokeoblog.net"
+		/>
+		<outline type="rss" encoding="utf-8"
+			text="ケルパンカ"
+			xmlUrl="https://kelpanka.net/atom.xml"
+			htmlUrl="https://kelpanka.net/atom.xml"
 		/>
 	</body>
 </opml>
